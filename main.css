@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid hotpink;
+  height: 100vh;
+}
+
+div {
+  border: 2px dotted chartreuse;
+  width: 20%;
+}
+
+.strobe_1 {
+  animation: strobe_1 3.5s infinite normal;
+  transition: all 1s;
+}
+@keyframes strobe_1{
+  0%{
+    background-color: green;
+  }
+  20%{
+    background-color: ;
+  }
+  40%{
+    background-color: ;
+  }
+  60%{
+    background-color: ;
+  }
+  80%{
+    background-color: ;
+  }
+}
+.strobe_2{
+  animation: strobe_2 4s infinite normal;
+  transition: all 1s; 
+}
+@keyframes strobe_2{
+  0%{
+    background-color: ;
+  }
+  20%{
+    background-color: green;
+  }
+  40%{
+    background-color: ;
+  }
+  60%{
+    background-color: ;
+  }
+  80%{
+    background-color: ;
+  }
+}
+
+.strobe_3 {
+  animation: strobe_3 4.5s infinite normal;
+  transition: all 1s;
+}
+@keyframes strobe_3{
+  0%{
+    background-color: ;
+  }
+  20%{
+    background-color: ;
+  }
+  40%{
+    background-color: green;
+  }
+  60%{
+    background-color: ;
+  }
+  80%{
+    background-color: ;
+  }
+}
+
+.strobe_4 {
+  animation: strobe_4 5s infinite normal;
+  transition: all 1s;
+}
+@keyframes strobe_4{
+  0%{
+    background-color: ;
+  }
+  20%{
+    background-color: ;
+  }
+  40%{
+    background-color: ;
+  }
+  60%{
+    background-color: green;
+  }
+  80%{
+    background-color: ;
+  }
+}
+.strobe_5 {
+  animation: strobe_5 5.5s infinite normal;
+  transition: all 1s;
+}
+@keyframes strobe_5{
+  0%{
+    background-color: ;
+  }
+  20%{
+    background-color: ;
+  }
+  40%{
+    background-color: ;
+  }
+  80%{
+    background-color: green;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.candle{
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  
+  background-color: blue;
+  clip-path: polygon(50% 10%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+} */
+.box {
+  background: orange;
+  clip-path: circle(75%);
+  height: 200px;
+  transition: clip-path 1s;
+  width: 200px;
+  margin: 100px auto;
+}
+
+.box:hover {
+  clip-path: circle(25%);
+  transform: translate(40%, 40%);
+}
